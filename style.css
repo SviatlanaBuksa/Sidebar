@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #49a6e9;
+  --transition: all 0.3s linear;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+html {
+  background-color: hsl(210, 36%, 96%);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+a {
+  transition: var(--transition);
+  text-decoration: none;
+  color: hsl(209, 34%, 30%);
+}
+i {
+  color: var(--primary-color);
+  padding: 3px;
+  transition: var(--transition);
+}
+
+img:hover {
+  cursor: pointer;
+}
+li:hover {
+  cursor: pointer;
+}
+li:hover a {
+  color: #49a6e9;
+}
+
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-width: 400px;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.cancel-btn i {
+  font-size: 1.7rem;
+  color: hsl(360, 67%, 44%);
+}
+.cancel-btn:hover i {
+  transform: rotate(360deg);
+  opacity: 0.7;
+}
+
+.sidebar {
+  margin-top: 10px;
+}
+.sidebar li {
+  font-size: 1.5rem;
+  color: hsl(210, 22%, 49%);
+  opacity: 0.7;
+  padding: 20px 25px;
+}
+.sidebar li:hover {
+  background-color: hsl(205, 86%, 81%);
+  padding-left: 30px;
+}
+
+.social-icons {
+  position: fixed;
+  bottom: 0;
+  left: 5.1rem;
+  padding: 1.3rem;
+}
+.social-icons li {
+  padding: 0;
+  display: inline;
+  font-size: 1.5rem;
+}
+.social-icons i:hover {
+  opacity: 0.7;
+}
+
+.bars {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+}
+.bars i {
+  font-size: 2rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* @media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  ul {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: left;
+    padding: 0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  .menu a {
+    margin: 5px;
+  }
+  li {
+    display: block;
+    padding: 10px 15px;
+  }
+  li:hover {
+    background-color: hsl(205, 86%, 81%);
+    padding-left: 30px;
+  }
+} */
