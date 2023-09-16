@@ -66,6 +66,7 @@ li:hover a {
   max-width: 400px;
   background-color: #fff;
   height: 100vh;
+  position: absolute;
 }
 
 .cancel-btn i {
@@ -92,10 +93,8 @@ li:hover a {
 }
 
 .social-icons {
-  position: fixed;
-  bottom: 0;
-  left: 5.1rem;
-  padding: 1.3rem;
+  position: relative;
+  top: 6rem;
 }
 .social-icons li {
   padding: 0;
