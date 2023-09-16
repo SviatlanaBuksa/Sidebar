@@ -67,6 +67,7 @@ li:hover a {
   background-color: #fff;
   height: 100vh;
   position: absolute;
+  transition: var(--transition);
 }
 
 .cancel-btn i {
@@ -115,29 +116,8 @@ li:hover a {
   animation: bounce 2s ease-in-out infinite;
 }
 
-/* @media screen and (max-width: 768px) {
-  nav {
-    position: relative;
+@media (max-width: 768px) {
+  .container {
+    max-width: 100vw;
   }
-  ul {
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    text-align: left;
-    padding: 0;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  .menu a {
-    margin: 5px;
-  }
-  li {
-    display: block;
-    padding: 10px 15px;
-  }
-  li:hover {
-    background-color: hsl(205, 86%, 81%);
-    padding-left: 30px;
-  }
-} */
+}
